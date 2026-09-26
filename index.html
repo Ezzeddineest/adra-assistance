@@ -1,0 +1,1383 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ADRA Assistance — Dépannage & remorquage automobile 24h/24 | 25 755 755</title>
+<meta name="description" content="Dépannage et remorquage automobile en Tunisie, 24h/24 et 7j/7. Flotte récente, équipements professionnels. Appelez ADRA Assistance au 25 755 755.">
+<meta name="theme-color" content="#AE2E2B">
+<meta name="format-detection" content="telephone=yes">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_TN">
+<meta property="og:site_name" content="ADRA Assistance">
+<meta property="og:title" content="En panne ? ADRA arrive. — 25 755 755">
+<meta property="og:description" content="Dépannage & remorquage automobile 24h/24 et 7j/7.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<!-- Google Tag Manager / GA4 : insérer ici. Les clics d'appel poussent l'événement "click_to_call" dans dataLayer. -->
+<link rel="preload" href="barlow-condensed-latin-800-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:500;font-display:swap;src:url(barlow-condensed-latin-500-normal.woff2) format('woff2');}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:600;font-display:swap;src:url(barlow-condensed-latin-600-normal.woff2) format('woff2');}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(barlow-condensed-latin-700-normal.woff2) format('woff2');}
+@font-face{font-family:'Barlow Condensed';font-style:italic;font-weight:700;font-display:swap;src:url(barlow-condensed-latin-700-italic.woff2) format('woff2');}
+@font-face{font-family:'Barlow Condensed';font-style:italic;font-weight:800;font-display:swap;src:url(barlow-condensed-latin-800-italic.woff2) format('woff2');}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:400;font-display:swap;src:url(barlow-latin-400-normal.woff2) format('woff2');}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:500;font-display:swap;src:url(barlow-latin-500-normal.woff2) format('woff2');}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:600;font-display:swap;src:url(barlow-latin-600-normal.woff2) format('woff2');}
+</style>
+<style>
+/* =========================================================
+   ADRA ASSISTANCE — design tokens (thème blanc & rouge)
+   Rouge = rouge exact du logo ADRA (#AE2E2B).
+   Le rouge plein est réservé aux actions d'appel et aux blocs de marque.
+   ========================================================= */
+:root{
+  color-scheme: light;
+  --bg:#FFFFFF;
+  --surface:#F6F4F3;
+  --surface-2:#EEEAE8;
+  --line:#E7E2DF;
+  --line-strong:#D2CAC6;
+  --ink:#17191E;
+  --ink-2:#464C57;
+  --muted:#686E79;
+  --red:#AE2E2B;
+  --red-hi:#C23531;
+  --red-deep:#8A221F;
+  --red-50:#FBF0EF;
+  --red-100:#F4DCDA;
+  --ok:#1C9A55;
+
+  --f-display:"Barlow Condensed","Arial Narrow","Roboto Condensed",system-ui,sans-serif;
+  --f-body:"Barlow",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+
+  --r-sm:8px; --r-md:12px; --r-lg:16px; --r-xl:28px;
+  --wrap:1200px;
+  --gutter:16px;
+  --sec:64px;
+  --header-h:68px;
+  --bar-h:64px;
+  --shadow:0 1px 2px rgba(23,25,30,.04), 0 12px 32px -16px rgba(23,25,30,.14);
+}
+@media (min-width:640px){ :root{ --gutter:24px; } }
+@media (min-width:960px){ :root{ --gutter:32px; --sec:104px; --header-h:80px; } }
+
+*,*::before,*::after{ box-sizing:border-box; }
+[hidden]{ display:none !important; }
+html{ scroll-behavior:smooth; scroll-padding-top:calc(var(--header-h) + 12px); }
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font:400 16px/1.6 var(--f-body);
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  padding-bottom:calc(var(--bar-h) + env(safe-area-inset-bottom,0px));
+}
+@media (min-width:960px){ body{ padding-bottom:0; } }
+img,svg{ display:block; max-width:100%; }
+a{ color:inherit; }
+h1,h2,h3{ font-family:var(--f-display); font-weight:700; line-height:1.02; letter-spacing:.005em; margin:0; text-wrap:balance; }
+p{ margin:0; }
+button{ font:inherit; }
+:focus-visible{ outline:3px solid var(--red); outline-offset:3px; border-radius:6px; }
+.skip{ position:absolute; left:12px; top:-60px; z-index:100; background:var(--red); color:#fff; padding:10px 14px; border-radius:8px; font-weight:600; text-decoration:none; }
+.skip:focus{ top:12px; }
+
+.wrap{ width:100%; max-width:var(--wrap); margin-inline:auto; padding-inline:var(--gutter); }
+.num{ font-variant-numeric:tabular-nums; white-space:nowrap; }
+.eyebrow{
+  display:inline-flex; align-items:center; gap:10px;
+  font:600 13px/1 var(--f-display); letter-spacing:.14em; text-transform:uppercase; color:var(--red);
+}
+.eyebrow::before{ content:""; width:22px; height:3px; border-radius:2px; background:currentColor; }
+.sec{ padding-block:var(--sec); }
+.sec-head{ display:grid; gap:14px; max-width:720px; margin-bottom:40px; }
+.sec-head h2{ font-size:clamp(34px,5.2vw,56px); }
+.sec-head p{ color:var(--ink-2); font-size:18px; max-width:60ch; }
+.bg-surface{ background:var(--surface); }
+
+/* Speed lines, reprises du logo */
+.speed{ display:grid; gap:9px; justify-items:end; }
+.speed i{ display:block; height:9px; border-radius:9px; background:currentColor; }
+
+/* ---------- Buttons ---------- */
+.btn{
+  --h:56px;
+  display:inline-flex; align-items:center; justify-content:center; gap:12px;
+  min-height:var(--h); padding:0 22px; border-radius:var(--r-md);
+  font:600 17px/1 var(--f-body); text-decoration:none; cursor:pointer; border:0;
+  transition:transform .18s ease, background-color .18s ease, box-shadow .18s ease, border-color .18s ease, color .18s ease;
+  -webkit-tap-highlight-color:transparent;
+}
+.btn svg{ width:22px; height:22px; flex:none; }
+.btn-call{ background:var(--red); color:#fff; box-shadow:0 12px 28px -14px rgba(174,46,43,.75); }
+.btn-call:hover{ background:var(--red-hi); transform:translateY(-1px); box-shadow:0 18px 36px -16px rgba(174,46,43,.85); }
+.btn-call:active{ transform:translateY(0); }
+.btn-call .lbl, .btn-white .lbl{ display:flex; flex-direction:column; align-items:flex-start; gap:4px; text-align:left; }
+.btn .lbl small{ font:600 12px/1 var(--f-body); letter-spacing:.06em; text-transform:uppercase; opacity:.85; }
+.btn .lbl b{ font:italic 800 28px/1 var(--f-display); letter-spacing:.01em; font-variant-numeric:tabular-nums; }
+.btn-ghost{ background:var(--bg); color:var(--ink); border:1.5px solid var(--line-strong); }
+.btn-ghost:hover{ border-color:var(--ink); }
+.btn-ink{ background:var(--ink); color:#fff; }
+.btn-ink:hover{ background:#2A2E36; transform:translateY(-1px); }
+.btn-white{ background:#fff; color:var(--red); box-shadow:0 16px 40px -18px rgba(0,0,0,.45); }
+.btn-white:hover{ transform:translateY(-1px); background:#FFF6F5; }
+.btn-onred{ background:transparent; color:#fff; border:1.5px solid rgba(255,255,255,.55); }
+.btn-onred:hover{ border-color:#fff; background:rgba(255,255,255,.08); }
+.btn-lg{ --h:64px; }
+.btn-xl{ --h:80px; padding:0 30px; border-radius:16px; }
+.btn-xl .lbl b{ font-size:clamp(34px,5.5vw,46px); }
+.btn-sm{ --h:46px; font-size:15px; padding:0 16px; }
+.btn-sm svg{ width:18px; height:18px; }
+
+/* ---------- Header ---------- */
+.hdr{
+  position:fixed; inset:0 0 auto 0; z-index:50;
+  padding-top:env(safe-area-inset-top,0px);
+  background:rgba(255,255,255,.96); backdrop-filter:saturate(140%) blur(10px); -webkit-backdrop-filter:saturate(140%) blur(10px);
+  transition:box-shadow .25s ease;
+}
+.hdr-in{ display:flex; align-items:center; gap:20px; height:var(--header-h); transition:height .25s ease; }
+.hdr.is-solid{ box-shadow:0 1px 0 var(--line), 0 10px 30px -20px rgba(23,25,30,.25); }
+@media (min-width:960px){ .hdr.is-solid .hdr-in{ height:66px; } }
+
+.logo{ display:flex; align-items:center; text-decoration:none; flex:none; }
+.logo img{ height:50px; width:auto; border-radius:8px; }
+@media (min-width:960px){ .logo img{ height:62px; } .hdr.is-solid .logo img{ height:52px; } }
+.logo img{ transition:height .25s ease; }
+
+.nav{ display:none; margin-left:auto; }
+.nav ul{ list-style:none; display:flex; gap:26px; margin:0; padding:0; }
+.nav a{ text-decoration:none; font-weight:500; font-size:15px; color:var(--ink-2); padding:8px 0; position:relative; }
+.nav a:hover{ color:var(--ink); }
+.nav a::after{ content:""; position:absolute; left:0; right:0; bottom:2px; height:2px; background:var(--red); transform:scaleX(0); transform-origin:left; transition:transform .2s ease; }
+.nav a:hover::after{ transform:scaleX(1); }
+
+.hdr-cta{ display:none; align-items:center; gap:14px; }
+.pill-247{
+  display:inline-flex; align-items:center; gap:8px; height:34px; padding:0 12px; border-radius:99px;
+  border:1px solid var(--line-strong); font:700 15px/1 var(--f-display); letter-spacing:.08em; color:var(--ink);
+}
+.dot{ width:8px; height:8px; border-radius:50%; background:var(--ok); box-shadow:0 0 0 0 rgba(28,154,85,.5); animation:pulse 2.4s ease-out infinite; flex:none; }
+@keyframes pulse{ 0%{ box-shadow:0 0 0 0 rgba(28,154,85,.45);} 70%{ box-shadow:0 0 0 9px rgba(28,154,85,0);} 100%{ box-shadow:0 0 0 0 rgba(28,154,85,0);} }
+.hdr-cta .btn{ --h:46px; padding:0 18px; font:italic 800 21px/1 var(--f-display); letter-spacing:.02em; }
+.hdr-cta .btn svg{ width:18px; height:18px; }
+
+.hdr-mob{ margin-left:auto; display:flex; align-items:center; gap:8px; }
+.icon-btn{
+  width:46px; height:46px; display:grid; place-items:center; border-radius:12px; border:1px solid var(--line-strong);
+  background:#fff; color:var(--ink); cursor:pointer; text-decoration:none;
+}
+.icon-btn svg{ width:22px; height:22px; }
+.icon-btn.call{ background:var(--red); color:#fff; border-color:transparent; }
+
+@media (min-width:1080px){
+  .nav{ display:block; }
+  .hdr-cta{ display:flex; }
+  .hdr-mob{ display:none; }
+}
+@media (min-width:960px) and (max-width:1079px){
+  .hdr-cta{ display:flex; margin-left:auto; }
+  .hdr-mob .call{ display:none; }
+  .hdr-mob{ margin-left:0; }
+}
+
+/* Mobile menu */
+.mmenu{
+  position:fixed; inset:0; z-index:60; background:#fff;
+  padding:calc(env(safe-area-inset-top,0px) + 10px) var(--gutter) calc(env(safe-area-inset-bottom,0px) + 24px);
+  display:flex; flex-direction:column; gap:24px; overflow-y:auto;
+}
+.mmenu-top{ display:flex; align-items:center; justify-content:space-between; min-height:52px; }
+.mmenu ul{ list-style:none; margin:0; padding:0; display:grid; }
+.mmenu li a{ display:flex; justify-content:space-between; align-items:center; padding:16px 2px; border-bottom:1px solid var(--line); text-decoration:none; font:600 28px/1 var(--f-display); letter-spacing:.02em; }
+.mmenu li a svg{ width:20px; height:20px; color:var(--red); }
+.mmenu .btn{ width:100%; }
+.mmenu-note{ color:var(--muted); font-size:14px; display:flex; align-items:center; gap:8px; }
+
+/* ---------- Hero ---------- */
+.hero{ position:relative; background:var(--bg); overflow:hidden; }
+.hero::before{ /* fine trame de fond, discrète */
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background:radial-gradient(900px 500px at 85% 20%, var(--red-50), rgba(251,240,239,0) 70%);
+}
+.hero-grid{
+  position:relative; display:grid; gap:28px;
+  padding-top:calc(var(--header-h) + env(safe-area-inset-top,0px) + 24px); padding-bottom:40px;
+}
+.hero-copy{ display:grid; gap:20px; align-content:start; }
+.badge{
+  display:inline-flex; flex-wrap:wrap; align-items:center; gap:6px 10px; width:max-content; max-width:100%;
+  padding:8px 14px 8px 12px; border-radius:99px; background:#fff; border:1px solid var(--line-strong); color:var(--ink);
+  font:600 13px/1.2 var(--f-display); letter-spacing:.12em; text-transform:uppercase;
+}
+.badge .sep{ color:var(--red); }
+.hero h1{ font:italic 800 clamp(48px,13vw,112px)/.9 var(--f-display); text-transform:uppercase; letter-spacing:-.005em; }
+.hero h1 .l1{ display:block; color:var(--ink); }
+.hero h1 .l2{ display:block; color:var(--red); }
+.hero-sub{ font-size:clamp(18px,2.3vw,21px); color:var(--ink-2); max-width:36ch; }
+.hero-ctas{ display:flex; flex-wrap:wrap; gap:12px; margin-top:4px; }
+.hero-ctas .btn-call{ flex:1 1 280px; justify-content:flex-start; padding-inline:20px 24px; }
+.hero-ctas .btn-ghost{ flex:1 1 220px; }
+.reassure{ display:flex; flex-wrap:wrap; gap:8px 18px; color:var(--ink-2); font-size:14.5px; font-weight:500; }
+.reassure span{ display:inline-flex; align-items:center; gap:7px; }
+.reassure svg{ width:16px; height:16px; color:var(--red); }
+
+.hero-art{
+  position:relative; border-radius:var(--r-xl); overflow:hidden; aspect-ratio:16/11; max-width:100%;
+  background:linear-gradient(155deg, var(--red-hi) 0%, var(--red) 52%, var(--red-deep) 100%);
+  box-shadow:0 30px 60px -34px rgba(138,34,31,.7);
+}
+.hero-art svg{ position:absolute; inset:0; width:100%; height:100%; }
+.hero-art .tel-stamp{
+  position:absolute; left:18px; top:16px; display:none; gap:2px; color:#fff;
+}
+.hero-art .tel-stamp small{ font:600 11px/1 var(--f-body); letter-spacing:.14em; text-transform:uppercase; opacity:.85; }
+.hero-art .tel-stamp b{ font:italic 800 30px/1 var(--f-display); letter-spacing:.01em; }
+.media-tag{
+  position:absolute; right:12px; bottom:12px;
+  font:500 11px/1.3 var(--f-body); letter-spacing:.03em; color:rgba(255,255,255,.85);
+  background:rgba(0,0,0,.18); border:1px dashed rgba(255,255,255,.45); padding:5px 9px; border-radius:6px;
+}
+@media (min-width:960px){
+  .hero-grid{ grid-template-columns:1.02fr 1fr; gap:56px; align-items:center; padding-top:calc(var(--header-h) + 64px); padding-bottom:72px; }
+  .hero-ctas .btn-call,.hero-ctas .btn-ghost{ flex:0 0 auto; }
+  .hero-art{ aspect-ratio:1/1.02; }
+  .hero-art .tel-stamp{ display:grid; left:28px; top:26px; }
+  .hero-art .tel-stamp b{ font-size:40px; }
+}
+
+.beacon{ animation:beacon 1.6s ease-in-out infinite; }
+@keyframes beacon{ 0%,100%{ opacity:.35; } 50%{ opacity:1; } }
+
+/* ---------- Trust bar ---------- */
+.trust{ position:relative; padding-bottom:8px; }
+.trust-grid{
+  list-style:none; margin:0; padding:0;
+  display:grid; grid-template-columns:repeat(2,minmax(0,1fr));
+  background:#fff; border:1px solid var(--line); border-radius:var(--r-lg); overflow:hidden; box-shadow:var(--shadow);
+}
+.trust-item{ display:flex; gap:12px; align-items:flex-start; padding:18px 16px; }
+.trust-item:nth-child(odd){ border-right:1px solid var(--line); }
+.trust-item:nth-child(-n+2){ border-bottom:1px solid var(--line); }
+.trust-item svg{ width:26px; height:26px; color:var(--red); flex:none; margin-top:2px; }
+.trust-item b{ display:block; font:italic 800 25px/1 var(--f-display); letter-spacing:.01em; }
+.trust-item span{ display:block; font-size:13.5px; color:var(--ink-2); line-height:1.35; margin-top:5px; }
+@media (min-width:860px){
+  .trust-grid{ grid-template-columns:repeat(4,minmax(0,1fr)); }
+  .trust-item{ padding:26px 24px; gap:16px; }
+  .trust-item:nth-child(-n+2){ border-bottom:0; }
+  .trust-item:not(:last-child){ border-right:1px solid var(--line); }
+  .trust-item b{ font-size:31px; }
+  .trust-item span{ font-size:14.5px; }
+}
+
+/* ---------- Services ---------- */
+.svc-grid{ display:grid; gap:12px; grid-template-columns:1fr; }
+.svc{
+  position:relative; display:grid; grid-template-columns:auto 1fr; gap:4px 16px; align-items:start;
+  padding:18px; border-radius:var(--r-lg); background:#fff; border:1px solid var(--line);
+  transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.svc:hover{ transform:translateY(-4px); border-color:var(--red-100); box-shadow:var(--shadow); }
+.svc-ic{ grid-row:span 2; width:52px; height:52px; border-radius:12px; display:grid; place-items:center; background:var(--red-50); color:var(--red); }
+.svc-ic svg{ width:28px; height:28px; }
+.svc h3{ font-size:26px; font-weight:700; letter-spacing:.005em; }
+.svc p{ color:var(--ink-2); font-size:15.5px; line-height:1.5; }
+.svc-feature{ overflow:hidden; display:block; background:linear-gradient(155deg, var(--red-hi), var(--red) 55%, var(--red-deep)); border-color:transparent; color:#fff; }
+.svc-feature:hover{ border-color:transparent; }
+.svc-feature > div:first-child{ display:grid; grid-template-columns:auto 1fr; gap:4px 16px; align-items:start; }
+.svc-feature .svc-ic{ background:rgba(255,255,255,.16); color:#fff; }
+.svc-feature p{ color:rgba(255,255,255,.9); }
+.svc-feature .svc-art{ display:none; }
+.svc-foot{
+  margin-top:20px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:14px;
+  padding:18px 20px; border-radius:var(--r-lg); border:1.5px dashed var(--line-strong); background:#fff;
+}
+.svc-foot p{ font-size:17px; color:var(--ink-2); }
+.svc-foot p b{ color:var(--ink); font-weight:600; }
+.link-call{ display:inline-flex; align-items:center; gap:8px; font:italic 800 24px/1 var(--f-display); letter-spacing:.01em; color:var(--red); text-decoration:none; }
+.link-call svg{ width:18px; height:18px; }
+.link-call:hover{ text-decoration:underline; text-underline-offset:4px; }
+@media (min-width:640px){ .svc-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (min-width:1000px){
+  .svc-grid{ grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; }
+  .svc{ grid-template-columns:1fr; gap:12px; padding:26px 24px 28px; align-content:start; }
+  .svc-ic{ grid-row:auto; margin-bottom:10px; }
+  .svc-feature{ display:grid; grid-column:span 2; grid-template-columns:1fr 1.1fr; gap:12px 16px; }
+  .svc-feature > div:first-child{ grid-template-columns:1fr; gap:12px; align-content:start; }
+  .svc-feature .svc-art{ display:block; align-self:end; margin:0 -24px -28px 0; }
+  .svc-feature h3{ font-size:36px; font-style:italic; font-weight:800; }
+}
+
+/* ---------- Steps ---------- */
+.step-list{ list-style:none; margin:0; padding:0; display:grid; gap:0; position:relative; }
+.step{ position:relative; display:grid; grid-template-columns:56px 1fr; gap:18px; padding-bottom:32px; }
+.step:last-child{ padding-bottom:0; }
+.step::before{ content:""; position:absolute; left:27px; top:56px; bottom:0; width:2px; background:var(--line-strong); }
+.step:last-child::before{ display:none; }
+.step-n{
+  width:56px; height:56px; border-radius:50%; display:grid; place-items:center;
+  background:#fff; border:2px solid var(--line-strong);
+  font:italic 800 22px/1 var(--f-display); color:var(--ink);
+}
+.step:first-child .step-n{ background:var(--red); color:#fff; border-color:var(--red); }
+.step h3{ font-size:30px; margin-top:4px; }
+.step p{ color:var(--ink-2); margin-top:8px; max-width:34ch; }
+.step .link-call{ margin-top:10px; font-size:30px; }
+.safety{
+  margin-top:36px; display:flex; gap:14px; align-items:flex-start; padding:16px 18px; border-radius:var(--r-md);
+  background:var(--red-50); border:1px solid var(--red-100); color:var(--ink-2); font-size:15px; max-width:760px;
+}
+.safety svg{ width:22px; height:22px; color:var(--red); flex:none; margin-top:1px; }
+.safety b{ color:var(--ink); }
+@media (min-width:900px){
+  .step-list{ grid-template-columns:repeat(3,minmax(0,1fr)); gap:32px; }
+  .step{ grid-template-columns:1fr; gap:22px; padding-bottom:0; }
+  .step::before{ left:72px; right:-32px; top:27px; bottom:auto; width:auto; height:2px; background:repeating-linear-gradient(90deg,var(--line-strong) 0 10px,transparent 10px 18px); }
+  .step h3{ font-size:34px; }
+}
+
+/* ---------- Fleet ---------- */
+.fleet-head{ display:grid; gap:18px; margin-bottom:36px; }
+.fleet-head h2{ font-size:clamp(34px,5.2vw,58px); max-width:16ch; }
+.fleet-head p{ color:var(--ink-2); font-size:18px; max-width:52ch; }
+@media (min-width:960px){ .fleet-head{ grid-template-columns:1.2fr 1fr; align-items:end; gap:48px; } }
+.bento{ display:grid; gap:12px; grid-template-columns:repeat(2,minmax(0,1fr)); }
+.tile{
+  position:relative; overflow:hidden; border-radius:var(--r-lg); background:#fff; border:1px solid var(--line);
+  aspect-ratio:4/3; max-width:100%; margin:0;
+}
+.tile-big{ grid-column:span 2; aspect-ratio:16/10; }
+.tile svg.art{ position:absolute; inset:0; width:100%; height:100%; transition:transform .6s cubic-bezier(.2,.7,.2,1); }
+.tile:hover svg.art{ transform:scale(1.04); }
+.tile figcaption{
+  position:absolute; left:10px; bottom:10px; right:10px; padding:9px 12px;
+  background:rgba(255,255,255,.94); border-radius:10px; border:1px solid var(--line);
+  display:flex; flex-direction:column; gap:2px; max-width:max-content;
+}
+.tile figcaption b{ font:700 18px/1.1 var(--f-display); letter-spacing:.01em; }
+.tile figcaption span{ font-size:11.5px; color:var(--muted); }
+.tile-big figcaption b{ font-size:19px; }
+@media (min-width:900px){ .tile-big figcaption b{ font-size:23px; } }
+@media (min-width:900px){
+  .bento{ grid-template-columns:repeat(4,minmax(0,1fr)); grid-auto-rows:1fr; gap:16px; }
+  .tile{ aspect-ratio:auto; min-height:220px; }
+  .tile-big{ grid-column:span 2; grid-row:span 2; }
+}
+.specs{ list-style:none; padding:0; margin:16px 0 0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+.spec{ display:flex; align-items:center; gap:12px; padding:14px; border-radius:var(--r-md); border:1px solid var(--line); background:#fff; }
+.spec i{ width:10px; height:10px; border-radius:50%; background:var(--red); box-shadow:0 0 0 4px var(--red-100); flex:none; }
+.spec b{ font:700 18px/1.15 var(--f-display); letter-spacing:.01em; }
+@media (min-width:900px){ .specs{ grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; } .spec{ padding:18px 20px; } .spec b{ font-size:20px; } }
+
+/* ---------- Why ---------- */
+.why-in{ display:grid; gap:32px; }
+.why-intro h2{ font-size:clamp(34px,5vw,56px); }
+.why-intro p{ margin-top:18px; color:var(--ink-2); font-size:18px; max-width:40ch; }
+.why-intro .btn{ margin-top:28px; }
+.why-list{ list-style:none; margin:0; padding:0; border-top:1px solid var(--line); }
+.why-list li{ display:grid; grid-template-columns:44px 1fr; gap:4px 16px; padding:22px 0; border-bottom:1px solid var(--line); }
+.why-list svg{ width:28px; height:28px; color:var(--red); margin-top:2px; grid-row:span 2; }
+.why-list h3{ font-size:26px; }
+.why-list p{ color:var(--ink-2); }
+@media (min-width:960px){
+  .why-in{ grid-template-columns:5fr 7fr; gap:72px; align-items:start; }
+  .why-intro{ position:sticky; top:110px; }
+  .why-list li{ grid-template-columns:56px 220px 1fr; align-items:baseline; padding:26px 0; }
+  .why-list svg{ grid-row:auto; }
+}
+
+/* ---------- About ---------- */
+.about{ overflow:hidden; }
+.about-in{ display:grid; gap:36px; align-items:center; }
+.year{
+  margin:0; font:italic 800 clamp(130px,30vw,300px)/.8 var(--f-display); letter-spacing:-.01em; color:transparent;
+  -webkit-text-stroke:2px rgba(174,46,43,.4); user-select:none; display:flex; flex-direction:column;
+}
+.year small{ font:600 14px/1 var(--f-display); font-style:normal; letter-spacing:.2em; text-transform:uppercase; color:var(--red); -webkit-text-stroke:0; margin-bottom:14px; }
+.about h2{ font-size:clamp(34px,5vw,54px); margin-top:14px; }
+.about-copy p{ color:var(--ink-2); font-size:18px; margin-top:18px; max-width:56ch; }
+.facts{ margin:28px 0 0; display:grid; border-top:1px solid var(--line-strong); }
+.facts div{ display:grid; grid-template-columns:140px 1fr; gap:12px; padding:14px 0; border-bottom:1px solid var(--line-strong); font-size:15.5px; }
+.facts dt{ color:var(--muted); }
+.facts dd{ margin:0; font-weight:600; }
+.facts a{ color:var(--red); }
+@media (min-width:960px){ .about-in{ grid-template-columns:5fr 7fr; gap:64px; } }
+
+/* ---------- Pro (corporate) ---------- */
+.pro-in{ display:grid; gap:40px; }
+.pro h2{ font-size:clamp(34px,5vw,54px); margin-top:14px; }
+.pro-lead{ margin-top:18px; color:var(--ink-2); font-size:18px; max-width:52ch; }
+.pro-copy .btn{ margin-top:28px; }
+.pro-copy .btn svg{ width:20px; height:20px; }
+.pro-commit{ margin-top:32px; display:grid; gap:10px; }
+.pro-commit div{ display:flex; gap:12px; align-items:center; font-weight:500; }
+.pro-commit svg{ width:20px; height:20px; color:var(--red); flex:none; }
+.targets{ background:var(--surface); border:1px solid var(--line); border-radius:var(--r-lg); padding:8px 22px; }
+.targets h3{ font:600 13px/1 var(--f-display); letter-spacing:.14em; text-transform:uppercase; color:var(--muted); padding:18px 0 10px; }
+.targets ul{ list-style:none; margin:0; padding:0; display:grid; }
+.targets li{ display:flex; align-items:center; gap:14px; padding:14px 0; border-top:1px solid var(--line-strong); font:600 21px/1.15 var(--f-display); letter-spacing:.01em; }
+.targets li svg{ width:22px; height:22px; color:var(--red); flex:none; }
+@media (min-width:960px){
+  .pro-in{ grid-template-columns:6fr 5fr; gap:72px; align-items:start; }
+  .targets ul{ grid-template-columns:1fr 1fr; column-gap:28px; }
+}
+
+/* ---------- Reviews ---------- */
+.rev-grid{ display:grid; gap:12px; }
+.rev{
+  border:1.5px dashed var(--line-strong); border-radius:var(--r-lg); padding:22px; display:grid; gap:14px; align-content:start;
+  background:#fff;
+}
+.rev-tag{ display:inline-flex; width:max-content; max-width:100%; font:600 11px/1.2 var(--f-body); letter-spacing:.1em; text-transform:uppercase; color:var(--red); border:1px solid var(--red-100); background:var(--red-50); padding:6px 8px; border-radius:6px; }
+.stars{ display:flex; gap:4px; color:var(--surface-2); }
+.stars svg{ width:18px; height:18px; }
+.rev-lines{ display:grid; gap:8px; }
+.rev-lines i{ display:block; height:10px; border-radius:5px; background:var(--surface-2); }
+.rev-lines i:nth-child(2){ width:92%; } .rev-lines i:nth-child(3){ width:64%; }
+.rev-who{ display:flex; align-items:center; gap:12px; color:var(--muted); font-size:14px; }
+.rev-who i{ width:38px; height:38px; border-radius:50%; background:var(--surface-2); flex:none; }
+.rev-note{ margin-top:18px; color:var(--muted); font-size:14.5px; }
+@media (min-width:900px){ .rev-grid{ grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; } }
+
+/* ---------- FAQ ---------- */
+.faq-in{ display:grid; gap:32px; align-items:start; }
+.faq .sec-head{ align-content:start; margin-bottom:0; }
+.faq .sec-head a{ color:var(--red); font-weight:600; }
+.faq-list{ border-top:1px solid var(--line); }
+.faq details{ border-bottom:1px solid var(--line); }
+.faq summary{
+  list-style:none; cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:20px;
+  padding:20px 2px; font:600 21px/1.25 var(--f-display); letter-spacing:.01em;
+}
+.faq summary::-webkit-details-marker{ display:none; }
+.faq summary .pm{ width:32px; height:32px; flex:none; border-radius:50%; border:1px solid var(--line-strong); display:grid; place-items:center; color:var(--red); transition:transform .2s ease, background-color .2s ease; }
+.faq summary .pm svg{ width:14px; height:14px; }
+.faq details[open] summary .pm{ transform:rotate(45deg); background:var(--red-50); border-color:var(--red-100); }
+.faq details p{ padding:0 2px 22px; color:var(--ink-2); max-width:64ch; }
+.faq details p a{ color:var(--red); font-weight:600; }
+@media (min-width:960px){ .faq-in{ grid-template-columns:4fr 8fr; gap:72px; } .faq .sec-head{ position:sticky; top:110px; } .faq summary{ font-size:23px; } }
+
+/* ---------- Final CTA (bloc rouge de marque) ---------- */
+.final{ position:relative; overflow:hidden; text-align:center; color:#fff;
+  background:linear-gradient(160deg, var(--red-hi) 0%, var(--red) 50%, var(--red-deep) 100%); }
+.final .speed{ position:absolute; color:rgba(255,255,255,.14); pointer-events:none; }
+.final .speed.l{ left:-40px; top:22%; justify-items:start; }
+.final .speed.r{ right:-40px; bottom:18%; }
+.final .wrap{ position:relative; display:grid; justify-items:center; gap:20px; }
+.final .badge{ background:rgba(255,255,255,.12); border-color:rgba(255,255,255,.35); color:#fff; }
+.final h2{ font:italic 800 clamp(48px,9.5vw,104px)/.9 var(--f-display); text-transform:uppercase; }
+.final p.sub{ color:rgba(255,255,255,.92); font-size:20px; }
+.final .btn-xl{ margin-top:12px; width:min(100%,540px); }
+.save{ margin-top:18px; display:grid; gap:14px; justify-items:center; }
+.save p{ color:rgba(255,255,255,.92); font-size:16px; }
+.save-btns{ display:flex; flex-wrap:wrap; gap:10px; justify-content:center; }
+.toast{ min-height:20px; font-size:14px; color:#fff; }
+
+/* ---------- Footer ---------- */
+.ftr{ background:var(--surface); border-top:1px solid var(--line); padding-block:56px 32px; color:var(--ink-2); font-size:15px; }
+.ftr-grid{ display:grid; gap:36px; }
+.ftr .logo{ margin-bottom:16px; }
+.ftr .logo img{ height:96px; border-radius:12px; }
+.ftr-contact{ display:grid; gap:6px; }
+.ftr-contact .link-call{ font-size:34px; margin-top:6px; }
+.ftr h3{ font:600 13px/1 var(--f-display); letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:14px; }
+.ftr ul{ list-style:none; margin:0; padding:0; display:grid; gap:10px; }
+.ftr ul a{ text-decoration:none; }
+.ftr ul a:hover{ color:var(--red); text-decoration:underline; text-underline-offset:3px; }
+.ftr-bottom{ margin-top:44px; padding-top:20px; border-top:1px solid var(--line-strong); display:flex; flex-wrap:wrap; gap:10px 24px; justify-content:space-between; font-size:13.5px; color:var(--muted); }
+@media (min-width:760px){ .ftr-grid{ grid-template-columns:2fr 1fr 1fr; } }
+
+/* ---------- Sticky mobile call bar ---------- */
+.callbar{
+  position:fixed; left:0; right:0; bottom:0; z-index:55;
+  padding:8px var(--gutter) calc(8px + env(safe-area-inset-bottom,0px));
+  background:rgba(255,255,255,.95); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+  border-top:1px solid var(--line); box-shadow:0 -10px 30px -18px rgba(23,25,30,.3);
+}
+.callbar a{
+  display:flex; align-items:center; justify-content:center; gap:12px; height:52px; border-radius:12px;
+  background:var(--red); color:#fff; text-decoration:none;
+  font:italic 800 22px/1 var(--f-display); letter-spacing:.01em;
+}
+.callbar a svg{ width:22px; height:22px; flex:none; }
+.callbar a span{ white-space:nowrap; }
+@media (min-width:960px){ .callbar{ display:none; } }
+
+/* ---------- Assistance dialog ---------- */
+dialog.sheet{
+  width:min(560px, 100%); max-height:min(92svh, 860px); margin:auto auto 0; padding:0; border:0; border-radius:20px 20px 0 0;
+  background:#fff; color:var(--ink); box-shadow:0 -20px 60px rgba(23,25,30,.3);
+}
+dialog.sheet::backdrop{ background:rgba(23,25,30,.55); backdrop-filter:blur(3px); }
+@media (min-width:640px){ dialog.sheet{ margin:auto; border-radius:20px; } }
+.sheet-in{ padding:22px var(--gutter) calc(22px + env(safe-area-inset-bottom,0px)); display:grid; gap:18px; }
+@media (min-width:640px){ .sheet-in{ padding:28px; } }
+.sheet-head{ display:flex; justify-content:space-between; gap:16px; align-items:flex-start; }
+.sheet-head h2{ font-size:32px; }
+.sheet-head p{ color:var(--ink-2); font-size:15px; margin-top:6px; }
+.sheet .close{ width:44px; height:44px; flex:none; border-radius:12px; border:1px solid var(--line-strong); background:#fff; color:var(--ink); display:grid; place-items:center; cursor:pointer; }
+.sheet .close svg{ width:18px; height:18px; }
+.urgent{ display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px 14px; border-radius:12px; background:var(--red-50); border:1px solid var(--red-100); font-size:14.5px; }
+.urgent a{ color:var(--red); font:italic 800 22px/1 var(--f-display); text-decoration:none; white-space:nowrap; }
+.field{ display:grid; gap:8px; }
+.field > label, .field .lab{ font-weight:600; font-size:15px; }
+.field .hint{ font-size:13px; color:var(--muted); font-weight:400; }
+.inp, .sel, textarea.inp{
+  width:100%; min-height:50px; padding:12px 14px; border-radius:12px; border:1px solid var(--line-strong);
+  background:#fff; color:var(--ink); font:400 16px/1.4 var(--f-body);
+}
+textarea.inp{ min-height:92px; resize:vertical; }
+.inp:focus, .sel:focus{ outline:none; border-color:var(--red); box-shadow:0 0 0 3px var(--red-100); }
+.chips{ display:flex; flex-wrap:wrap; gap:8px; }
+.chip input{ position:absolute; opacity:0; pointer-events:none; }
+.chip span{ display:inline-flex; align-items:center; min-height:44px; padding:0 14px; border-radius:99px; border:1px solid var(--line-strong); cursor:pointer; font-weight:500; font-size:15px; transition:all .15s ease; }
+.chip input:checked + span{ background:var(--red); color:#fff; border-color:var(--red); }
+.chip input:focus-visible + span{ outline:3px solid var(--red); outline-offset:2px; }
+.loc-row{ display:flex; gap:8px; }
+.loc-row .inp{ flex:1; min-width:0; }
+.loc-row .btn{ --h:50px; padding:0 14px; font-size:14.5px; flex:none; }
+.loc-row .btn svg{ width:18px; height:18px; }
+.loc-msg{ font-size:13.5px; color:var(--muted); min-height:18px; }
+.loc-msg.ok{ color:var(--ok); }
+.row2{ display:grid; gap:14px; }
+@media (min-width:520px){ .row2{ grid-template-columns:1fr 1fr; } }
+.sheet .btn-call, .sheet .btn-ink{ width:100%; }
+.sheet-done{ display:grid; gap:14px; padding:14px 16px; border-radius:12px; background:#EEF8F2; border:1px solid #CBE9D7; font-size:15px; }
+.sheet-done pre{ margin:0; white-space:pre-wrap; font:400 13.5px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace; color:var(--ink-2); background:#fff; border:1px solid var(--line); padding:12px; border-radius:8px; max-height:160px; overflow:auto; }
+
+/* ---------- Reveal (progressive, content visible without JS) ---------- */
+.js .pre{ opacity:0; transform:translateY(16px); }
+.js .rv{ transition:opacity .6s ease, transform .6s cubic-bezier(.2,.7,.2,1); }
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{ animation:none !important; transition:none !important; scroll-behavior:auto !important; }
+  .js .pre{ opacity:1; transform:none; }
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="gCab" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DA433D"/><stop offset=".55" stop-color="#AE2E2B"/><stop offset="1" stop-color="#7A1D1A"/>
+    </linearGradient>
+    <linearGradient id="gBed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5A606A"/><stop offset="1" stop-color="#2B2F36"/>
+    </linearGradient>
+    <linearGradient id="gCar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3B4757"/><stop offset=".5" stop-color="#1D2530"/><stop offset="1" stop-color="#11161D"/>
+    </linearGradient>
+    <linearGradient id="gGlass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2B3A4C"/><stop offset=".6" stop-color="#0E141B"/><stop offset="1" stop-color="#1A2533"/>
+    </linearGradient>
+    <linearGradient id="gRimLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".75"/><stop offset=".25" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="gAmber" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFB81C" stop-opacity=".55"/><stop offset=".35" stop-color="#FF9A00" stop-opacity=".18"/><stop offset="1" stop-color="#FF9A00" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gRed" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FF3B30" stop-opacity=".5"/><stop offset="1" stop-color="#FF3B30" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#070A0F"/><stop offset=".7" stop-color="#101925"/><stop offset="1" stop-color="#18222F"/>
+    </linearGradient>
+    <linearGradient id="gRoad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141B24"/><stop offset="1" stop-color="#05070A"/>
+    </linearGradient>
+    <linearGradient id="gBeam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFF6DA" stop-opacity=".5"/><stop offset="1" stop-color="#FFF6DA" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="pHatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="14" height="14" fill="#F5F2F1"/><rect width="1" height="14" fill="#E8E2DF"/>
+    </pattern>
+
+    <!-- Camion plateau ADRA (illustration provisoire), orienté vers la droite, sol à y=290 -->
+    <symbol id="truck" viewBox="0 0 1000 300">
+      <!-- chassis -->
+      <rect x="60" y="192" width="900" height="30" rx="4" fill="#0C1016"/>
+      <!-- bed + ramp -->
+      <path d="M14 200 L44 168 H762 V196 H44 Z" fill="url(#gBed)"/>
+      <path d="M44 168 H762" stroke="#5B6776" stroke-width="2"/>
+      <rect x="44" y="180" width="718" height="5" fill="#FFFFFF" opacity=".85"/>
+      <g fill="#0C1016" opacity=".85">
+        <rect x="120" y="186" width="10" height="10"/><rect x="260" y="186" width="10" height="10"/><rect x="400" y="186" width="10" height="10"/><rect x="540" y="186" width="10" height="10"/><rect x="680" y="186" width="10" height="10"/>
+      </g>
+      <rect x="18" y="197" width="16" height="8" rx="2" fill="#FF3B30"/>
+      <!-- headboard / winch -->
+      <rect x="740" y="84" width="20" height="86" fill="#2A3340"/>
+      <rect x="740" y="84" width="20" height="86" fill="none" stroke="#5B6776" stroke-width="1.5"/>
+      <path d="M744 104 H756 M744 124 H756 M744 144 H756" stroke="#5B6776" stroke-width="2"/>
+      <rect x="742" y="150" width="30" height="18" rx="3" fill="#11161D"/>
+      <path d="M742 159 L640 150" stroke="#8A96A6" stroke-width="2"/>
+      <!-- car on bed -->
+      <g>
+        <path d="M94 150 Q90 128 110 122 L204 108 Q252 70 304 62 H468 Q512 62 560 102 L640 116 Q664 122 664 146 V158 H94 Z" fill="url(#gCar)"/>
+        <path d="M110 122 L204 108 Q252 70 304 62 H468 Q512 62 560 102 L640 116" fill="none" stroke="url(#gRimLight)" stroke-width="3"/>
+        <path d="M304 74 H384 V106 H238 Q264 82 304 74 Z" fill="url(#gGlass)"/>
+        <path d="M394 74 H466 Q494 74 534 106 H394 Z" fill="url(#gGlass)"/>
+        <path d="M110 128 L200 120" stroke="#56616F" stroke-width="2"/>
+        <rect x="650" y="128" width="12" height="8" rx="2" fill="#E8EEF5" opacity=".7"/>
+        <rect x="96" y="128" width="10" height="8" rx="2" fill="#B8241C"/>
+        <circle cx="184" cy="146" r="24" fill="#06080B"/><circle cx="184" cy="146" r="12" fill="#3A4452"/>
+        <circle cx="556" cy="146" r="24" fill="#06080B"/><circle cx="556" cy="146" r="12" fill="#3A4452"/>
+        <path d="M150 168 L174 140 M218 168 L194 140 M522 168 L546 140 M590 168 L566 140" stroke="#E0A21A" stroke-width="3"/>
+      </g>
+      <!-- cab -->
+      <path d="M770 222 V62 Q770 44 788 44 H880 Q896 44 904 56 L950 126 Q958 138 974 142 L990 146 Q1000 150 1000 162 V222 Z" fill="url(#gCab)"/>
+      <path d="M770 62 Q770 44 788 44 H880 Q896 44 904 56 L950 126" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".55"/>
+      <path d="M788 64 H874 Q884 64 890 72 L930 132 H788 Z" fill="url(#gGlass)"/>
+      <path d="M800 70 L850 70 L812 120 L800 120 Z" fill="#fff" opacity=".06"/>
+      <rect x="786" y="140" width="112" height="76" rx="4" fill="none" stroke="#E88A86" stroke-width="1.5"/>
+      <rect x="872" y="150" width="16" height="4" rx="2" fill="#F3C4C1"/>
+      <text x="842" y="194" text-anchor="middle" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="700" font-size="30" letter-spacing="2" fill="#FFFFFF" font-style="italic">ADRA</text>
+      <rect x="786" y="202" width="112" height="4" fill="#FFFFFF"/>
+      <rect x="952" y="206" width="48" height="18" rx="3" fill="#1A212B"/>
+      <rect x="984" y="156" width="16" height="12" rx="3" fill="#FFF8E1"/>
+      <rect x="966" y="178" width="30" height="16" rx="2" fill="#2A3340"/>
+      <!-- light bar -->
+      <rect x="796" y="32" width="80" height="12" rx="4" fill="#1A212B"/>
+      <rect x="800" y="34" width="32" height="8" rx="3" fill="#FFB81C"/>
+      <rect x="840" y="34" width="32" height="8" rx="3" fill="#FFB81C"/>
+      <!-- mudguard -->
+      <path d="M140 222 Q262 170 384 222" fill="none" stroke="#0C1016" stroke-width="10"/>
+      <!-- wheels -->
+      <g>
+        <circle cx="200" cy="250" r="40" fill="#050709"/><circle cx="200" cy="250" r="21" fill="#2E3743"/><circle cx="200" cy="250" r="7" fill="#11161D"/>
+        <circle cx="322" cy="250" r="40" fill="#050709"/><circle cx="322" cy="250" r="21" fill="#2E3743"/><circle cx="322" cy="250" r="7" fill="#11161D"/>
+        <circle cx="878" cy="250" r="46" fill="#0A0E13"/>
+        <circle cx="878" cy="250" r="40" fill="#050709"/><circle cx="878" cy="250" r="21" fill="#2E3743"/><circle cx="878" cy="250" r="7" fill="#11161D"/>
+      </g>
+    </symbol>
+
+    <!-- Icônes (grille 24, trait) -->
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="M8 14h2M14 14h2M8 17h2"/></g></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7.5 3v5.5c0 4.5-3.2 8-7.5 9.5-4.3-1.5-7.5-5-7.5-9.5V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></g></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16.5V14h11V8h4.5l3 4v4.5h-1.5"/><path d="M13 12h7.5"/><path d="M2 14l1.5-3H10"/><circle cx="6.5" cy="17" r="2"/><circle cx="16.5" cy="17" r="2"/><path d="M8.5 17h6"/></g></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a4.5 4.5 0 0 0-5.9 5.6L3.5 17.2a1.8 1.8 0 0 0 2.5 2.6l5.3-5.3a4.5 4.5 0 0 0 5.6-5.9l-2.7 2.7-2.3-.4-.4-2.3z" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/></symbol>
+    <symbol id="i-tow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 16.5H21v-4l-2.2-3.5H14z"/><path d="M14 16.5H2.5"/><path d="M11 13L4 6.5"/><path d="M4 6.5V9.5a1.5 1.5 0 0 1-3 0"/><circle cx="6" cy="17" r="2"/><circle cx="17.5" cy="17" r="2"/></g></symbol>
+    <symbol id="i-warn" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l9.5 16.5h-19z"/><path d="M12 10v4.5"/><circle cx="12" cy="17.3" r=".4" fill="currentColor"/></g></symbol>
+    <symbol id="i-battery" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="7" width="19" height="12" rx="2"/><path d="M6 7V5h3v2M15 7V5h3v2"/><path d="M6 13h3M15.5 11.5v3M14 13h3"/></g></symbol>
+    <symbol id="i-tire" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3.5v5M12 15.5v5M3.5 12h5M15.5 12h5"/></g></symbol>
+    <symbol id="i-crash" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16v-3.5l2-4.5h7.5l2.5 4.5V16z"/><path d="M3 12.5h12"/><circle cx="6.5" cy="16.5" r="1.8"/><circle cx="12" cy="16.5" r="1.8"/><path d="M18 5l1.5 2.5L22 6.5l-1.5 3L22 12l-3 .5"/></g></symbol>
+    <symbol id="i-transport" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 15h21"/><path d="M5 12l1.5-3.5h8L17 12H5z"/><path d="M4 12h14v2H4z"/><circle cx="5.5" cy="18" r="1.8"/><circle cx="18.5" cy="18" r="1.8"/><path d="M7.3 18h9.4"/></g></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2.5L4.5 13.5H11l-1 8 8.5-11H12z" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/></symbol>
+    <symbol id="i-badge" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 13.5L7 21l5-2.5 5 2.5-1.5-7.5"/><path d="M9.8 9l1.5 1.5 3-3"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></g></symbol>
+    <symbol id="i-shield-car" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7.5 3v5.5c0 4.5-3.2 8-7.5 9.5-4.3-1.5-7.5-5-7.5-9.5V6z"/><path d="M8 14v-2l1-2.5h6L16 12v2z"/></g></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V4.5h10V21M14 9h6v12M2.5 21h19"/><path d="M7 8h1.5M10 8h1.5M7 11.5h1.5M10 11.5h1.5M7 15h1.5M10 15h1.5M16.5 12.5h1M16.5 16h1"/></g></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.8l2.8 5.8 6.3.8-4.6 4.4 1.1 6.3L12 17l-5.6 3.1 1.1-6.3L2.9 9.4l6.3-.8z"/></symbol>
+    <symbol id="i-contact" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="8" r="3.5"/><path d="M3.5 20a6.5 6.5 0 0 1 13 0"/><path d="M19 8v6M16 11h6"/></g></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="8.5" y="8.5" width="12" height="12" rx="2"/><path d="M15.5 8.5V5a1.5 1.5 0 0 0-1.5-1.5H5A1.5 1.5 0 0 0 3.5 5v9A1.5 1.5 0 0 0 5 15.5h3.5"/></g></symbol>
+    <symbol id="i-msg" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></g></symbol>
+    <symbol id="i-handshake" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 11l4-4 3 1 3-2 3 1 3-1 4 4"/><path d="M6 7l-3 7 4 4 2-1 2 2 2-1 2 1 4-5-3-6"/><path d="M9 12l2 2M11.5 10.5l2.5 2.5"/></g></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5L19 9M14.5 8.5l2 2"/></g></symbol>
+    <symbol id="i-garage" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9.5L12 4l9.5 5.5V20h-19z"/><path d="M6.5 20v-7h11v7M6.5 16h11"/></g></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5V20h17V9.5"/><path d="M2.5 9.5L4.5 4h15l2 5.5a2.7 2.7 0 0 1-5 .8 2.7 2.7 0 0 1-4.5 0 2.7 2.7 0 0 1-4.5 0 2.7 2.7 0 0 1-5-.8z"/><path d="M9.5 20v-5h5v5"/></g></symbol>
+    <symbol id="i-fleet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l1.5-3.5h7L13 11"/><path d="M2 11h12v4H2z"/><path d="M11 7.5l1-2.5h7l1.5 3.5"/><path d="M14 8h8v4h-8"/><circle cx="5" cy="16" r="1.4"/><circle cx="11" cy="16" r="1.4"/></g></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">Aller au contenu</a>
+
+<!-- ================= HEADER ================= -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a class="logo" href="#top" aria-label="ADRA Assistance, accueil">
+      <picture><source type="image/webp" srcset="logo-adra-mark.webp"><img src="logo-adra-mark.jpg" alt="ADRA Tunisie — Remorquage &amp; Assistance" width="300" height="240" decoding="async"></picture>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="#top">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#flotte">Notre flotte</a></li>
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#professionnels">Professionnels</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hdr-cta">
+      <span class="pill-247"><span class="dot" aria-hidden="true"></span>24/7</span>
+      <a class="btn btn-call" href="tel:+21625755755" data-track="call-header" aria-label="Appeler ADRA Assistance au 25 755 755">
+        <svg aria-hidden="true"><use href="#i-phone"/></svg><span class="num">25 755 755</span>
+      </a>
+    </div>
+    <div class="hdr-mob">
+      <a class="icon-btn call" href="tel:+21625755755" data-track="call-header-mobile" aria-label="Appeler le 25 755 755"><svg aria-hidden="true"><use href="#i-phone"/></svg></a>
+      <button class="icon-btn" id="menuBtn" aria-expanded="false" aria-controls="mmenu" aria-label="Ouvrir le menu"><svg aria-hidden="true"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mmenu" id="mmenu" hidden role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="mmenu-top">
+    <span class="logo"><picture><source type="image/webp" srcset="logo-adra-mark.webp"><img src="logo-adra-mark.jpg" alt="ADRA Tunisie — Remorquage &amp; Assistance" width="300" height="240" decoding="async"></picture></span>
+    <button class="icon-btn" id="menuClose" aria-label="Fermer le menu"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+  </div>
+  <ul>
+    <li><a href="#top">Accueil<svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+    <li><a href="#services">Services<svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+    <li><a href="#flotte">Notre flotte<svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+    <li><a href="#a-propos">À propos<svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+    <li><a href="#professionnels">Professionnels<svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+    <li><a href="#contact">Contact<svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+  </ul>
+  <a class="btn btn-call btn-lg" href="tel:+21625755755" data-track="call-menu">
+    <svg aria-hidden="true"><use href="#i-phone"/></svg>
+    <span class="lbl"><small>Appeler maintenant</small><b>25 755 755</b></span>
+  </a>
+  <p class="mmenu-note"><span class="dot" aria-hidden="true"></span>Disponible 24h/24 — 7j/7</p>
+</div>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="badge"><span class="dot" aria-hidden="true"></span>Disponible maintenant <span class="sep">·</span> 24h/24 • 7j/7</p>
+      <h1 id="hero-title"><span class="l1">En panne&nbsp;?</span><span class="l2">ADRA arrive.</span></h1>
+      <p class="hero-sub">Dépannage &amp; remorquage automobile, jour et nuit, week-ends et jours fériés compris.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-call btn-lg" href="tel:+21625755755" data-track="call-hero">
+          <svg aria-hidden="true"><use href="#i-phone"/></svg>
+          <span class="lbl"><small>Appeler maintenant</small><b>25 755 755</b></span>
+        </a>
+        <button class="btn btn-ghost btn-lg" type="button" data-open="assist">
+          <svg aria-hidden="true"><use href="#i-msg"/></svg>Demander une assistance
+        </button>
+      </div>
+      <p class="reassure">
+        <span><svg aria-hidden="true"><use href="#i-check"/></svg>Disponible 24/7</span>
+        <span><svg aria-hidden="true"><use href="#i-check"/></svg>Camions récents</span>
+        <span><svg aria-hidden="true"><use href="#i-check"/></svg>Équipements professionnels</span>
+      </p>
+    </div>
+    <div class="hero-art">
+      <!--
+        PHOTO RÉELLE À INTÉGRER ICI (prioritaire sur l'illustration) : remplacer le <svg> ci-dessous par
+        <picture>
+          <source type="image/avif" srcset="hero-640.avif 640w, hero-1280.avif 1280w" sizes="(min-width:960px) 50vw, 100vw">
+          <source type="image/webp" srcset="hero-640.webp 640w, hero-1280.webp 1280w" sizes="(min-width:960px) 50vw, 100vw">
+          <img src="hero-1280.jpg" alt="Camion plateau ADRA transportant une voiture" width="1280" height="1280" fetchpriority="high" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+        </picture>
+      -->
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+        <rect x="660" y="120" width="300" height="16" rx="8" fill="#fff" opacity="0.22"/><rect x="740" y="152" width="220" height="16" rx="8" fill="#fff" opacity="0.16"/><rect x="600" y="184" width="360" height="16" rx="8" fill="#fff" opacity="0.22"/><rect x="800" y="216" width="160" height="16" rx="8" fill="#fff" opacity="0.12"/>
+        <path d="M120 780 A380 380 0 0 1 880 780 Z" fill="#fff"/>
+        <circle cx="775" cy="573" r="80" fill="url(#gAmber)" class="beacon"/>
+        <use href="#truck" x="90" y="542" width="820" height="246"/>
+        <rect x="20" y="640" width="70" height="14" rx="7" fill="#fff" opacity="0.35"/><rect x="0" y="672" width="110" height="14" rx="7" fill="#fff" opacity="0.5"/><rect x="30" y="704" width="60" height="14" rx="7" fill="#fff" opacity="0.3"/>
+        <rect x="40" y="778" width="920" height="10" rx="5" fill="#fff"/>
+        <rect x="540" y="826" width="420" height="18" rx="9" fill="#fff" opacity="0.9"/><rect x="640" y="862" width="320" height="18" rx="9" fill="#fff" opacity="0.6"/><rect x="490" y="898" width="470" height="18" rx="9" fill="#fff" opacity="0.9"/><rect x="720" y="934" width="240" height="18" rx="9" fill="#fff" opacity="0.45"/>
+      </svg>
+      <span class="tel-stamp" aria-hidden="true"><small>Assistance 24/7</small><b>25 755 755</b></span>
+      <span class="media-tag">Visuel provisoire · photo réelle ADRA à intégrer</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRUST BAR ================= -->
+<div class="trust">
+  <div class="wrap">
+    <ul class="trust-grid">
+      <li class="trust-item"><svg aria-hidden="true"><use href="#i-clock"/></svg><div><b>24H/24</b><span>Assistance permanente</span></div></li>
+      <li class="trust-item"><svg aria-hidden="true"><use href="#i-cal"/></svg><div><b>7J/7</b><span>Week-ends &amp; jours fériés</span></div></li>
+      <li class="trust-item"><svg aria-hidden="true"><use href="#i-flag"/></svg><div><b>Depuis 2023</b><span>À votre service</span></div></li>
+      <li class="trust-item"><svg aria-hidden="true"><use href="#i-truck"/></svg><div><b>Flotte récente</b><span>Camions modernes &amp; équipés</span></div></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ================= SERVICES ================= -->
+<section class="sec services bg-surface" id="services" aria-labelledby="svc-title">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Nos services</span>
+      <h2 id="svc-title">Un seul réflexe&nbsp;: appeler ADRA.</h2>
+      <p>Panne, batterie, crevaison ou accident&nbsp;: nous prenons en charge votre véhicule, sur place ou jusqu'au garage.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc svc-feature rv">
+        <div>
+          <span class="svc-ic"><svg aria-hidden="true"><use href="#i-tow"/></svg></span>
+          <h3>Remorquage</h3>
+          <p>Transport sécurisé de votre véhicule vers le garage ou la destination de votre choix.</p>
+        </div>
+        <svg class="svc-art" viewBox="0 -50 1000 350" aria-hidden="true"><path d="M170 290 A330 330 0 0 1 830 290 Z" fill="#fff"/><use href="#truck" width="1000" height="300"/><rect x="20" y="288" width="960" height="8" rx="4" fill="#fff"/></svg>
+      </article>
+      <article class="svc rv">
+        <span class="svc-ic"><svg aria-hidden="true"><use href="#i-wrench"/></svg></span>
+        <h3>Dépannage automobile</h3>
+        <p>Quand une solution peut être apportée sur place, nous intervenons directement.</p>
+      </article>
+      <article class="svc rv">
+        <span class="svc-ic"><svg aria-hidden="true"><use href="#i-warn"/></svg></span>
+        <h3>Véhicule immobilisé</h3>
+        <p>Votre véhicule ne peut plus rouler&nbsp;? Nous le prenons en charge.</p>
+      </article>
+      <article class="svc rv">
+        <span class="svc-ic"><svg aria-hidden="true"><use href="#i-battery"/></svg></span>
+        <h3>Batterie</h3>
+        <p>Batterie déchargée ou problème de démarrage&nbsp;: appelez-nous.</p>
+      </article>
+      <article class="svc rv">
+        <span class="svc-ic"><svg aria-hidden="true"><use href="#i-tire"/></svg></span>
+        <h3>Crevaison</h3>
+        <p>Vous ne pouvez plus continuer normalement&nbsp;? Nous venons vous aider.</p>
+      </article>
+      <article class="svc rv">
+        <span class="svc-ic"><svg aria-hidden="true"><use href="#i-crash"/></svg></span>
+        <h3>Accident</h3>
+        <p>Prise en charge et remorquage de votre véhicule accidenté.</p>
+      </article>
+      <article class="svc rv">
+        <span class="svc-ic"><svg aria-hidden="true"><use href="#i-transport"/></svg></span>
+        <h3>Transport automobile</h3>
+        <p>Transport sécurisé de véhicules sur plateau, lorsque c'est nécessaire.</p>
+      </article>
+    </div>
+    <div class="svc-foot rv">
+      <p><b>Vous ne savez pas quel service choisir&nbsp;?</b> Appelez, on s'occupe du reste.</p>
+      <a class="link-call" href="tel:+21625755755" data-track="call-services"><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="num">25 755 755</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMMENT ÇA MARCHE ================= -->
+<section class="sec steps" aria-labelledby="steps-title">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Comment ça marche&nbsp;?</span>
+      <h2 id="steps-title">Trois étapes. Un seul appel.</h2>
+    </div>
+    <ol class="step-list">
+      <li class="step rv">
+        <span class="step-n" aria-hidden="true">01</span>
+        <div>
+          <h3>Appelez ADRA</h3>
+          <a class="link-call" href="tel:+21625755755" data-track="call-step"><span class="num">25 755 755</span></a>
+          <p>Expliquez-nous rapidement votre situation.</p>
+        </div>
+      </li>
+      <li class="step rv">
+        <span class="step-n" aria-hidden="true">02</span>
+        <div>
+          <h3>Localisez votre véhicule</h3>
+          <p>Communiquez votre position et les informations nécessaires sur votre véhicule.</p>
+        </div>
+      </li>
+      <li class="step rv">
+        <span class="step-n" aria-hidden="true">03</span>
+        <div>
+          <h3>Intervention</h3>
+          <p>Une équipe ADRA est mobilisée pour assurer votre dépannage ou votre remorquage.</p>
+        </div>
+      </li>
+    </ol>
+    <p class="safety rv"><svg aria-hidden="true"><use href="#i-warn"/></svg><span><b>En sécurité d'abord&nbsp;:</b> feux de détresse, gilet, triangle si c'est possible sans danger, et attendez derrière la glissière si vous le pouvez.</span></p>
+  </div>
+</section>
+
+<!-- ================= FLOTTE ================= -->
+<section class="sec fleet bg-surface" id="flotte" aria-labelledby="fleet-title">
+  <div class="wrap">
+    <div class="fleet-head rv">
+      <div>
+        <span class="eyebrow">Notre flotte</span>
+        <h2 id="fleet-title" style="margin-top:14px">Des équipements à la hauteur de nos interventions.</h2>
+      </div>
+      <p>ADRA Assistance investit dans une flotte récente afin d'assurer des interventions professionnelles, sûres et efficaces.</p>
+    </div>
+
+    <div class="bento">
+      <!-- Remplacer chaque <svg class="art"> par un <picture> avec la photo réelle correspondante -->
+      <figure class="tile tile-big rv" style="margin:0">
+        <svg class="art" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="1600" height="1000" fill="#F7F4F3"/>
+          <path d="M720 468 A300 300 0 0 1 1320 468 Z" fill="#F4DCDA"/>
+          <g stroke="#DCD4D0" stroke-width="3"><path d="M0 468H1600M0 690H1600M0 930H1600"/></g>
+          <use href="#truck" x="620" y="240" width="760" height="228"/>
+          <use href="#truck" x="320" y="440" width="840" height="252"/>
+          <use href="#truck" x="20" y="656" width="920" height="276"/>
+        </svg>
+        <figcaption><b>Flotte ADRA</b><span>Visuel provisoire · photo des camions alignés à intégrer</span></figcaption>
+      </figure>
+      <figure class="tile rv" style="margin:0">
+        <svg class="art" viewBox="20 40 720 270" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect x="0" y="0" width="1000" height="400" fill="url(#pHatch)"/>
+          <use href="#truck" width="1000" height="300"/>
+        </svg>
+        <figcaption><b>Plateau &amp; chargement</b><span>Photo à intégrer</span></figcaption>
+      </figure>
+      <figure class="tile rv" style="margin:0">
+        <svg class="art" viewBox="540 60 250 190" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect x="0" y="0" width="1000" height="400" fill="url(#pHatch)"/>
+          <use href="#truck" width="1000" height="300"/>
+        </svg>
+        <figcaption><b>Treuil &amp; sangles</b><span>Photo à intégrer</span></figcaption>
+      </figure>
+      <figure class="tile rv" style="margin:0">
+        <svg class="art" viewBox="740 10 290 290" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect x="0" y="0" width="1100" height="400" fill="url(#pHatch)"/>
+          <use href="#truck" width="1000" height="300"/>
+        </svg>
+        <figcaption><b>Cabine</b><span>Photo à intégrer</span></figcaption>
+      </figure>
+      <figure class="tile rv" style="margin:0">
+        <svg class="art" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="800" height="600" fill="url(#gSky)"/>
+          <rect y="440" width="800" height="160" fill="url(#gRoad)"/>
+          <circle cx="560" cy="260" r="360" fill="url(#gAmber)" class="beacon"/>
+          <use href="#truck" x="-60" y="200" width="900" height="270"/>
+        </svg>
+        <figcaption><b>Intervention de nuit</b><span>Photo à intégrer</span></figcaption>
+      </figure>
+    </div>
+
+    <ul class="specs">
+      <li class="spec rv"><i aria-hidden="true"></i><b>Flotte récente</b></li>
+      <li class="spec rv"><i aria-hidden="true"></i><b>Équipements professionnels</b></li>
+      <li class="spec rv"><i aria-hidden="true"></i><b>Entretien rigoureux</b></li>
+      <li class="spec rv"><i aria-hidden="true"></i><b>Intervention sécurisée</b></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= POURQUOI ADRA ================= -->
+<section class="sec why" aria-labelledby="why-title">
+  <div class="wrap why-in">
+    <div class="why-intro rv">
+      <span class="eyebrow">Pourquoi ADRA&nbsp;?</span>
+      <h2 id="why-title" style="margin-top:14px">Ce qui compte quand vous êtes arrêté au bord de la route.</h2>
+      <p>Une réponse, un équipement adapté, une équipe sérieuse. Le reste, on s'en occupe.</p>
+      <a class="btn btn-call" href="tel:+21625755755" data-track="call-why">
+        <svg aria-hidden="true"><use href="#i-phone"/></svg>
+        <span class="lbl"><small>Appeler</small><b>25 755 755</b></span>
+      </a>
+    </div>
+    <ul class="why-list">
+      <li class="rv"><svg aria-hidden="true"><use href="#i-clock"/></svg><h3>Disponible 24/7</h3><p>Parce qu'une panne peut arriver à n'importe quelle heure.</p></li>
+      <li class="rv"><svg aria-hidden="true"><use href="#i-truck"/></svg><h3>Flotte moderne</h3><p>Des camions récents et bien équipés.</p></li>
+      <li class="rv"><svg aria-hidden="true"><use href="#i-badge"/></svg><h3>Professionnalisme</h3><p>Des interventions réalisées avec méthode et sérieux.</p></li>
+      <li class="rv"><svg aria-hidden="true"><use href="#i-shield-car"/></svg><h3>Sécurité</h3><p>Une prise en charge attentive du véhicule pendant l'intervention et le transport.</p></li>
+      <li class="rv"><svg aria-hidden="true"><use href="#i-bolt"/></svg><h3>Réactivité</h3><p>Une organisation pensée pour prendre en charge rapidement les demandes d'assistance.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= À PROPOS ================= -->
+<section class="sec about bg-surface" id="a-propos" aria-labelledby="about-title">
+  <div class="wrap about-in">
+    <p class="year rv" aria-hidden="true"><small>Création</small>2023</p>
+    <div class="about-copy rv">
+      <span class="eyebrow">ADRA Assistance</span>
+      <h2 id="about-title">À vos côtés sur la route depuis 2023.</h2>
+      <p>ADRA Assistance a été créée en 2023 avec une ambition claire&nbsp;: moderniser l'expérience du dépannage et du remorquage automobile, grâce à une organisation professionnelle, une flotte récente et des équipements adaptés.</p>
+      <p>Derrière chaque appel, il y a une personne qui a besoin d'aide. Nous la prenons en charge avec calme, sérieux et respect, comme son véhicule.</p>
+      <dl class="facts">
+        <div><dt>Création</dt><dd>2023</dd></div>
+        <div><dt>Activité</dt><dd>Dépannage, remorquage et transport automobile</dd></div>
+        <div><dt>Disponibilité</dt><dd>24h/24 — 7j/7</dd></div>
+        <div><dt>Téléphone</dt><dd><a class="num" href="tel:+21625755755" data-track="call-about">25 755 755</a></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROFESSIONNELS ================= -->
+<section class="sec pro" id="professionnels" aria-labelledby="pro-title">
+  <div class="wrap pro-in">
+    <div class="pro-copy rv">
+      <span class="eyebrow">Professionnels &amp; partenaires</span>
+      <h2 id="pro-title">Une solution d'assistance pour vos besoins professionnels.</h2>
+      <p class="pro-lead">ADRA Assistance accompagne également les professionnels ayant besoin d'un partenaire fiable pour leurs opérations de dépannage, remorquage et transport automobile.</p>
+      <div class="pro-commit">
+        <div><svg aria-hidden="true"><use href="#i-check"/></svg>Disponibilité 24h/24 — 7j/7</div>
+        <div><svg aria-hidden="true"><use href="#i-check"/></svg>Flotte récente et équipée</div>
+        <div><svg aria-hidden="true"><use href="#i-check"/></svg>Dépannage, remorquage &amp; transport de véhicules</div>
+      </div>
+      <button class="btn btn-ink btn-lg" type="button" data-open="partner">Devenir partenaire<svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+    </div>
+    <div class="targets rv">
+      <h3>Nous travaillons avec</h3>
+      <ul>
+        <li><svg aria-hidden="true"><use href="#i-shield-car"/></svg>Compagnies d'assurance</li>
+        <li><svg aria-hidden="true"><use href="#i-handshake"/></svg>Sociétés d'assistance</li>
+        <li><svg aria-hidden="true"><use href="#i-fleet"/></svg>Gestionnaires de flotte</li>
+        <li><svg aria-hidden="true"><use href="#i-building"/></svg>Entreprises</li>
+        <li><svg aria-hidden="true"><use href="#i-key"/></svg>Loueurs</li>
+        <li><svg aria-hidden="true"><use href="#i-garage"/></svg>Garages</li>
+        <li><svg aria-hidden="true"><use href="#i-store"/></svg>Concessionnaires</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AVIS ================= -->
+<section class="sec reviews bg-surface" aria-labelledby="rev-title">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Avis clients</span>
+      <h2 id="rev-title">Ils nous ont appelés.</h2>
+    </div>
+    <!-- Composant prêt&nbsp;: remplacer chaque .rev par un avis réel (texte, prénom, date, source). Ne jamais inventer d'avis. -->
+    <div class="rev-grid">
+      <article class="rev rv" aria-label="Emplacement avis client 1, à remplacer">
+        <span class="rev-tag">Emplacement · avis réel à intégrer</span>
+        <div class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+        <div class="rev-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="rev-who"><i aria-hidden="true"></i>Prénom · date · source (Google)</div>
+      </article>
+      <article class="rev rv" aria-label="Emplacement avis client 2, à remplacer">
+        <span class="rev-tag">Emplacement · avis réel à intégrer</span>
+        <div class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+        <div class="rev-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="rev-who"><i aria-hidden="true"></i>Prénom · date · source (Google)</div>
+      </article>
+      <article class="rev rv" aria-label="Emplacement avis client 3, à remplacer">
+        <span class="rev-tag">Emplacement · avis réel à intégrer</span>
+        <div class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+        <div class="rev-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="rev-who"><i aria-hidden="true"></i>Prénom · date · source (Google)</div>
+      </article>
+    </div>
+    <p class="rev-note">Seuls des avis réels et vérifiables seront publiés ici.</p>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec faq" aria-labelledby="faq-title">
+  <div class="wrap faq-in">
+    <div class="sec-head rv" style="margin-bottom:0">
+      <span class="eyebrow">Questions fréquentes</span>
+      <h2 id="faq-title">Vos questions, nos réponses.</h2>
+      <p>Une autre question&nbsp;? Le plus simple est de nous appeler au <a class="num" href="tel:+21625755755">25 755 755</a>.</p>
+    </div>
+    <div class="faq-list">
+      <details class="rv"><summary>Êtes-vous disponibles la nuit&nbsp;?<span class="pm" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary><p>Oui, ADRA Assistance est disponible 24h/24 et 7j/7.</p></details>
+      <details class="rv"><summary>Puis-je vous appeler le week-end ou un jour férié&nbsp;?<span class="pm" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary><p>Oui, l'assistance est disponible 7 jours sur 7, jours fériés compris.</p></details>
+      <details class="rv"><summary>Quel numéro appeler en cas de panne&nbsp;?<span class="pm" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary><p>Le <a href="tel:+21625755755" class="num">25 755 755</a>. Enregistrez-le dès maintenant dans vos contacts.</p></details>
+      <details class="rv"><summary>Pouvez-vous remorquer mon véhicule&nbsp;?<span class="pm" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary><p>Oui, ADRA Assistance propose des services de dépannage et de remorquage automobile.</p></details>
+      <details class="rv"><summary>Quelles informations préparer avant d'appeler&nbsp;?<span class="pm" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary><p>Votre position (ou un repère proche), la marque et le modèle du véhicule, et une brève description de la situation.</p></details>
+      <details class="rv"><summary>Que faire en attendant la dépanneuse&nbsp;?<span class="pm" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary><p>Allumez vos feux de détresse, enfilez un gilet, placez le triangle si c'est possible sans danger, et attendez en sécurité, hors de la voie de circulation.</p></details>
+      <details class="rv"><summary>Je ne peux pas parler au téléphone, comment faire&nbsp;?<span class="pm" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary><p>Utilisez « Demander une assistance »&nbsp;: votre position et votre situation sont préparées dans un SMS prêt à envoyer au 25 755 755.</p></details>
+      <details class="rv"><summary>Travaillez-vous avec les professionnels&nbsp;?<span class="pm" aria-hidden="true"><svg><use href="#i-plus"/></svg></span></summary><p>Oui. Compagnies d'assurance, sociétés d'assistance, gestionnaires de flotte, loueurs et garages peuvent nous contacter depuis la section <a href="#professionnels">Professionnels</a>.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="sec final" id="contact" aria-labelledby="final-title">
+  <div class="speed l" aria-hidden="true"><i style="width:320px"></i><i style="width:220px"></i><i style="width:380px"></i><i style="width:160px"></i></div>
+  <div class="speed r" aria-hidden="true"><i style="width:260px"></i><i style="width:380px"></i><i style="width:200px"></i><i style="width:300px"></i></div>
+  <div class="wrap">
+    <p class="badge"><span class="dot" aria-hidden="true"></span>Disponible maintenant</p>
+    <h2 id="final-title">Un problème<br>sur la route&nbsp;?</h2>
+    <p class="sub">ADRA Assistance est disponible 24h/24 et 7j/7.</p>
+    <a class="btn btn-white btn-xl" href="tel:+21625755755" data-track="call-final">
+      <svg aria-hidden="true"><use href="#i-phone"/></svg>
+      <span class="lbl"><small>Appeler le</small><b>25 755 755</b></span>
+    </a>
+    <button class="btn btn-onred btn-sm" type="button" data-open="assist"><svg aria-hidden="true"><use href="#i-msg"/></svg>Demander une assistance par SMS</button>
+    <div class="save">
+      <p>Enregistrez notre numéro. Il pourrait vous être utile.</p>
+      <div class="save-btns">
+        <button class="btn btn-onred btn-sm" type="button" id="vcardBtn"><svg aria-hidden="true"><use href="#i-contact"/></svg>Ajouter aux contacts</button>
+        <button class="btn btn-onred btn-sm" type="button" id="copyBtn"><svg aria-hidden="true"><use href="#i-copy"/></svg>Copier le numéro</button>
+      </div>
+      <p class="toast" id="toast" role="status" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div>
+        <a class="logo" href="#top" aria-label="ADRA Assistance, accueil">
+          <picture><source type="image/webp" srcset="logo-adra.webp"><img src="logo-adra.jpg" alt="ADRA Tunisie — Remorquage &amp; Assistance" width="520" height="415" decoding="async"></picture>
+        </a>
+        <div class="ftr-contact">
+          <span>Dépannage &amp; Remorquage Automobile</span>
+          <span>Disponible 24h/24 — 7j/7</span>
+          <a class="link-call" href="tel:+21625755755" data-track="call-footer"><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="num">25 755 755</span></a>
+        </div>
+      </div>
+      <nav aria-label="Plan du site">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="#top">Accueil</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#flotte">Notre flotte</a></li>
+          <li><a href="#a-propos">À propos</a></li>
+          <li><a href="#professionnels">Professionnels</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Informations légales">
+        <h3>Informations</h3>
+        <ul>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="politique-de-confidentialite.html">Politique de confidentialité</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="ftr-bottom">
+      <span>© <span id="yr">2026</span> ADRA Assistance. Tous droits réservés.</span>
+      <span>Dépannage &amp; remorquage automobile 24h/24 — 7j/7</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= BARRE D'APPEL MOBILE ================= -->
+<div class="callbar">
+  <a href="tel:+21625755755" data-track="call-sticky" aria-label="Appeler ADRA au 25 755 755">
+    <svg aria-hidden="true"><use href="#i-phone"/></svg><span>Appeler ADRA — <span class="num">25 755 755</span></span>
+  </a>
+</div>
+
+<!-- ================= DIALOG&nbsp;: ASSISTANCE / PARTENAIRE ================= -->
+<dialog class="sheet" id="sheet" aria-labelledby="sheet-title">
+  <div class="sheet-in">
+    <div class="sheet-head">
+      <div>
+        <h2 id="sheet-title">Demander une assistance</h2>
+        <p id="sheet-desc">Trois informations, puis un SMS prêt à envoyer au 25 755 755.</p>
+      </div>
+      <button class="close" type="button" data-close aria-label="Fermer"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+    </div>
+
+    <!-- Mode assistance -->
+    <form id="fAssist" novalidate>
+      <div style="display:grid;gap:18px">
+        <div class="urgent"><span>Urgent&nbsp;? Un appel reste le plus rapide.</span><a href="tel:+21625755755" data-track="call-sheet" class="num">25 755 755</a></div>
+        <fieldset class="field" style="border:0;margin:0;padding:0">
+          <legend class="lab" style="padding:0;margin-bottom:8px;font-weight:600;font-size:15px">Votre situation</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="situation" value="Panne" checked><span>Panne</span></label>
+            <label class="chip"><input type="radio" name="situation" value="Batterie"><span>Batterie</span></label>
+            <label class="chip"><input type="radio" name="situation" value="Crevaison"><span>Crevaison</span></label>
+            <label class="chip"><input type="radio" name="situation" value="Accident"><span>Accident</span></label>
+            <label class="chip"><input type="radio" name="situation" value="Remorquage"><span>Remorquage</span></label>
+            <label class="chip"><input type="radio" name="situation" value="Autre"><span>Autre</span></label>
+          </div>
+        </fieldset>
+        <div class="field">
+          <label for="aLoc">Où êtes-vous&nbsp;?</label>
+          <div class="loc-row">
+            <input class="inp" id="aLoc" name="loc" type="text" autocomplete="street-address" placeholder="Route, sortie, commune, repère…" required>
+            <button class="btn btn-ghost" type="button" id="geoBtn"><svg aria-hidden="true"><use href="#i-pin"/></svg>Ma position</button>
+          </div>
+          <span class="loc-msg" id="locMsg" aria-live="polite"></span>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="aCar">Véhicule</label>
+            <input class="inp" id="aCar" name="car" type="text" placeholder="Marque, modèle, couleur">
+          </div>
+          <div class="field">
+            <label for="aName">Votre prénom <span class="hint">(facultatif)</span></label>
+            <input class="inp" id="aName" name="name" type="text" autocomplete="given-name">
+          </div>
+        </div>
+        <button class="btn btn-call btn-lg" type="submit"><svg aria-hidden="true"><use href="#i-msg"/></svg>Préparer le SMS</button>
+      </div>
+    </form>
+
+    <!-- Mode partenaire -->
+    <form id="fPartner" novalidate hidden>
+      <div style="display:grid;gap:18px">
+        <div class="row2">
+          <div class="field"><label for="pCo">Société</label><input class="inp" id="pCo" name="company" type="text" autocomplete="organization" required></div>
+          <div class="field"><label for="pSector">Secteur</label>
+            <select class="sel inp" id="pSector" name="sector">
+              <option>Compagnie d'assurance</option><option>Société d'assistance</option><option>Gestionnaire de flotte</option><option>Entreprise</option><option>Loueur</option><option>Garage</option><option>Concessionnaire</option><option>Autre</option>
+            </select>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="pName">Nom et fonction</label><input class="inp" id="pName" name="contact" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="pTel">Téléphone</label><input class="inp" id="pTel" name="tel" type="tel" autocomplete="tel" inputmode="tel" required></div>
+        </div>
+        <div class="field"><label for="pMsg">Votre besoin</label><textarea class="inp" id="pMsg" name="msg" placeholder="Volume estimé, type de véhicules, zones…"></textarea></div>
+        <button class="btn btn-ink btn-lg" type="submit">Envoyer la demande<svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </div>
+    </form>
+
+    <div class="sheet-done" id="done" hidden role="status">
+      <strong id="doneTitle">Votre SMS est prêt.</strong>
+      <span id="doneText">Votre application de messages s'ouvre avec le texte ci-dessous. Vérifiez-le puis envoyez-le. Si rien ne s'ouvre, appelez le 25 755 755 ou copiez le message.</span>
+      <pre id="donePre"></pre>
+      <div class="save-btns" style="justify-content:flex-start">
+        <a class="btn btn-call btn-sm" id="smsLink" href="#"><svg aria-hidden="true"><use href="#i-msg"/></svg>Ouvrir les messages</a>
+        <button class="btn btn-ghost btn-sm" type="button" id="copyMsg"><svg aria-hidden="true"><use href="#i-copy"/></svg>Copier le message</button>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"AutomotiveBusiness",
+  "name":"ADRA Assistance",
+  "description":"Dépannage et remorquage automobile 24h/24 et 7j/7. Flotte récente, équipements professionnels.",
+  "telephone":"+216 25 755 755",
+  "foundingDate":"2023",
+  "address":{"@type":"PostalAddress","addressCountry":"TN"},
+  "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],
+  "makesOffer":[
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Dépannage automobile"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Remorquage"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Transport automobile"}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Êtes-vous disponibles la nuit ?","acceptedAnswer":{"@type":"Answer","text":"Oui, ADRA Assistance est disponible 24h/24 et 7j/7."}},
+    {"@type":"Question","name":"Puis-je vous appeler le week-end ou un jour férié ?","acceptedAnswer":{"@type":"Answer","text":"Oui, l'assistance est disponible 7 jours sur 7, jours fériés compris."}},
+    {"@type":"Question","name":"Quel numéro appeler en cas de panne ?","acceptedAnswer":{"@type":"Answer","text":"Le 25 755 755."}},
+    {"@type":"Question","name":"Pouvez-vous remorquer mon véhicule ?","acceptedAnswer":{"@type":"Answer","text":"Oui, ADRA Assistance propose des services de dépannage et de remorquage automobile."}},
+    {"@type":"Question","name":"Quelles informations préparer avant d'appeler ?","acceptedAnswer":{"@type":"Answer","text":"Votre position (ou un repère proche), la marque et le modèle du véhicule, et une brève description de la situation."}},
+    {"@type":"Question","name":"Que faire en attendant la dépanneuse ?","acceptedAnswer":{"@type":"Answer","text":"Allumez vos feux de détresse, enfilez un gilet, placez le triangle si c'est possible sans danger, et attendez en sécurité, hors de la voie de circulation."}}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  var PHONE_INTL = '+21625755755';
+  var PHONE_DISPLAY = '25 755 755';
+  var doc = document.documentElement;
+  doc.classList.add('js');
+
+  /* Header : transparent -> solide au scroll */
+  var hdr = document.getElementById('hdr');
+  function onScroll(){ hdr.classList.toggle('is-solid', window.scrollY > 40); }
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  /* Menu mobile */
+  var mm = document.getElementById('mmenu'), mb = document.getElementById('menuBtn'), mc = document.getElementById('menuClose');
+  function setMenu(open){ mm.hidden = !open; mb.setAttribute('aria-expanded', open); document.body.style.overflow = open ? 'hidden' : ''; if(open) mc.focus(); else mb.focus(); }
+  mb.addEventListener('click', function(){ setMenu(true); });
+  mc.addEventListener('click', function(){ setMenu(false); });
+  mm.addEventListener('click', function(e){ if(e.target.closest('a[href^="#"]')){ mm.hidden = true; mb.setAttribute('aria-expanded', false); document.body.style.overflow=''; } });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && !mm.hidden) setMenu(false); });
+
+  /* Apparition douce : seuls les éléments sous la ligne de flottaison sont masqués au départ */
+  var rv = [].slice.call(document.querySelectorAll('.rv'));
+  if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var vh = window.innerHeight;
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.remove('pre'); io.unobserve(en.target); } });
+    }, {rootMargin:'0px 0px -8% 0px'});
+    rv.forEach(function(el){ if(el.getBoundingClientRect().top > vh){ el.classList.add('pre'); io.observe(el); } });
+  }
+
+  /* Suivi des clics d'appel (brancher GA4 / Meta ici) */
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('[data-track]');
+    if(a && window.dataLayer){ window.dataLayer.push({event:'click_to_call', location:a.getAttribute('data-track')}); }
+  });
+
+  /* Dialog assistance / partenaire */
+  var sheet = document.getElementById('sheet');
+  var fA = document.getElementById('fAssist'), fP = document.getElementById('fPartner');
+  var done = document.getElementById('done'), donePre = document.getElementById('donePre'), smsLink = document.getElementById('smsLink');
+  var title = document.getElementById('sheet-title'), desc = document.getElementById('sheet-desc');
+  function openSheet(mode){
+    var partner = mode === 'partner';
+    fA.hidden = partner; fP.hidden = !partner; done.hidden = true;
+    title.textContent = partner ? 'Devenir partenaire' : 'Demander une assistance';
+    desc.textContent = partner ? 'Présentez-nous votre activité et vos besoins. Nous revenons vers vous.' : 'Trois informations, puis un SMS prêt à envoyer au ' + PHONE_DISPLAY + '.';
+    if(typeof sheet.showModal === 'function'){ sheet.showModal(); } else { sheet.setAttribute('open',''); }
+  }
+  document.querySelectorAll('[data-open]').forEach(function(b){ b.addEventListener('click', function(){ openSheet(b.getAttribute('data-open')); }); });
+  sheet.querySelector('[data-close]').addEventListener('click', function(){ sheet.close ? sheet.close() : sheet.removeAttribute('open'); });
+  sheet.addEventListener('click', function(e){ if(e.target === sheet && sheet.close) sheet.close(); });
+
+  /* Géolocalisation */
+  var geoBtn = document.getElementById('geoBtn'), locInp = document.getElementById('aLoc'), locMsg = document.getElementById('locMsg');
+  geoBtn.addEventListener('click', function(){
+    locMsg.className = 'loc-msg';
+    if(!('geolocation' in navigator)){ locMsg.textContent = "Localisation indisponible. Indiquez un repère (route, sortie, commune)."; return; }
+    locMsg.textContent = 'Recherche de votre position…';
+    navigator.geolocation.getCurrentPosition(function(p){
+      var lat = p.coords.latitude.toFixed(5), lng = p.coords.longitude.toFixed(5);
+      locInp.value = 'https://maps.google.com/?q=' + lat + ',' + lng;
+      locMsg.textContent = 'Position GPS ajoutée (précision ~' + Math.round(p.coords.accuracy) + ' m). Ajoutez un repère si possible.';
+      locMsg.className = 'loc-msg ok';
+    }, function(){
+      locMsg.textContent = "Position non disponible. Indiquez un repère (route, sortie, commune).";
+    }, {enableHighAccuracy:true, timeout:10000, maximumAge:60000});
+  });
+
+  function smsHref(body){ return 'sms:' + PHONE_INTL + '?&body=' + encodeURIComponent(body); }
+  function showDone(t, text, body){
+    fA.hidden = true; fP.hidden = true; done.hidden = false;
+    document.getElementById('doneTitle').textContent = t;
+    document.getElementById('doneText').textContent = text;
+    donePre.textContent = body; smsLink.href = smsHref(body);
+  }
+  fA.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!locInp.value.trim()){ locInp.focus(); locMsg.textContent = 'Indiquez votre position ou touchez « Ma position ».'; return; }
+    var d = new FormData(fA);
+    var body = 'ADRA – Demande d\'assistance\nSituation : ' + d.get('situation') + '\nPosition : ' + d.get('loc') +
+      (d.get('car') ? '\nVéhicule : ' + d.get('car') : '') + (d.get('name') ? '\nNom : ' + d.get('name') : '');
+    showDone('Votre SMS est prêt.', "Votre application de messages va s'ouvrir avec ce texte : vérifiez-le puis envoyez-le. Si rien ne s'ouvre, appelez le " + PHONE_DISPLAY + '.', body);
+    window.location.href = smsHref(body);
+  });
+  fP.addEventListener('submit', function(e){
+    e.preventDefault();
+    var req = fP.querySelectorAll('[required]');
+    for(var i=0;i<req.length;i++){ if(!req[i].value.trim()){ req[i].focus(); return; } }
+    var d = new FormData(fP);
+    var body = 'ADRA – Demande partenaire\nSociété : ' + d.get('company') + ' (' + d.get('sector') + ')\nContact : ' + d.get('contact') + ' – ' + d.get('tel') + (d.get('msg') ? '\nBesoin : ' + d.get('msg') : '');
+    /* TODO production : envoyer vers un endpoint (e-mail / CRM) au lieu du SMS */
+    showDone('Votre demande est prête.', 'Envoyez-la par SMS ou copiez-la. Vous pouvez aussi nous appeler au ' + PHONE_DISPLAY + '.', body);
+  });
+
+  /* Copier */
+  function copy(text, cb){
+    function fallback(){ var t = document.createElement('textarea'); t.value = text; document.body.appendChild(t); t.select(); try{ document.execCommand('copy'); cb(true); }catch(err){ cb(false); } t.remove(); }
+    if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(text).then(function(){ cb(true); }, fallback); } else { fallback(); }
+  }
+  var toast = document.getElementById('toast');
+  document.getElementById('copyBtn').addEventListener('click', function(){ copy(PHONE_DISPLAY, function(ok){ toast.textContent = ok ? 'Numéro copié : ' + PHONE_DISPLAY : 'Notez le ' + PHONE_DISPLAY; }); });
+  document.getElementById('copyMsg').addEventListener('click', function(){ var b = this; copy(donePre.textContent, function(ok){ b.lastChild.textContent = ok ? 'Message copié' : 'Sélectionnez le texte'; }); });
+
+  /* Ajouter aux contacts (vCard) */
+  document.getElementById('vcardBtn').addEventListener('click', function(){
+    var v = 'BEGIN:VCARD\r\nVERSION:3.0\r\nFN:ADRA Assistance – Dépannage 24/7\r\nORG:ADRA Assistance\r\nTEL;TYPE=WORK,VOICE:' + PHONE_INTL + '\r\nNOTE:Dépannage & remorquage automobile 24h/24 – 7j/7\r\nEND:VCARD\r\n';
+    try{
+      var url = URL.createObjectURL(new Blob([v], {type:'text/vcard;charset=utf-8'}));
+      var a = document.createElement('a'); a.href = url; a.download = 'ADRA-Assistance.vcf'; document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 2000);
+      toast.textContent = 'Ouvrez la fiche téléchargée pour enregistrer le numéro. Rien ne se passe ? Enregistrez le ' + PHONE_DISPLAY + ' sous « ADRA Assistance ».';
+    }catch(err){ toast.textContent = 'Enregistrez le ' + PHONE_DISPLAY + ' sous « ADRA Assistance ».'; }
+  });
+
+  document.getElementById('yr').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
